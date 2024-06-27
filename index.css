@@ -294,38 +294,43 @@ h3 {
 }
 
 .skills {
-	.holder-blue {
-		background-color: var(--blue-100);
-		border-radius:30px;
-		padding:30px;
-		display:flex;
-		@media(max-width:1024px){
-			flex-direction:column;
-		}
-		.left-column {
-			flex:1;
-			ul {
-				list-style-type: none;
-				gap:10px;
-				margin-right:100px;
-				margin-bottom:20px;
-				li {
-					display:inline-block;
-					background-color: var(--blue-400);
-					padding:10px 20px;
-					border-radius:15px;
-					margin-bottom:10px;
-				}
-			}
-		}
-		.right-column {
-			flex:1;
-			p {
-				margin-bottom:20px;
-			}
-		}
-	}
+    .holder-blue {
+        background-color: var(--blue-100);
+        border-radius: 30px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column; /* Change to column for stacking */
+        
+        .left-column, .right-column {
+            width: 100%; /* Ensure both columns take full width */
+            margin-right: 0; /* Remove right margin for smaller screens */
+        }
+
+        .left-column {
+            ul {
+                list-style-type: none;
+                gap: 10px;
+                margin-right: 0; /* Remove margin for smaller screens */
+                margin-bottom: 20px;
+                li {
+                    display: inline-block;
+                    background-color: var(--blue-400);
+                    padding: 10px 20px;
+                    border-radius: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .right-column {
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
+
+
 
 .work-experience {
 	.jobs {
