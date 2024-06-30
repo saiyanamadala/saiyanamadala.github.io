@@ -20,6 +20,8 @@
 }
 
 
+  
+
 body {
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-optical-sizing: auto;
@@ -356,6 +358,7 @@ h3 {
 			p {
 				margin-bottom:10px;
 			}
+
 			figure {
 				width:100%;
 				padding-top:56.25%;
@@ -667,4 +670,10 @@ h3 {
 			}
 		}
 	}
+}
+
+#exp{
+	border-style: solid;
+	border-color: #000;
+	border-width: 2px;
 }
